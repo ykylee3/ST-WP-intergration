@@ -1,8 +1,9 @@
-<!-- This is the template for category Upcoming Events -->
+<!-- Upcoming Events category template -->
 
+<!-- header template -->
 <?php get_header(); ?>
 
-<!-- Banner -->
+<!-- Main Banner -->
 <header class="banner2 color5">
   <div class="container-fluid">
     <div class="row">
@@ -11,10 +12,12 @@
   </div>
 </header>
 
+<!-- articles page area -->
 <div class="container" id="articlehead">
   <h2>Upcoming Events</h2>
 </div>
-
+ 
+<!-- posts template -->
 <div class="container">
   <div class="row">
     <div class="events">
@@ -52,9 +55,9 @@
     <?php endwhile; else: ?>
       <p>Sorry no posts yet.</p>
     <?php endif; ?>
-
   </div>
 </div>
 </div>
 
+<!-- footer template -->
 <?php get_footer();?>
