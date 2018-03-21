@@ -1,9 +1,9 @@
-<!-- This is the template for page Merchandise-->
+<!-- Merchandise page template-->
 
 <?php get_header(); ?>
 
-<!-- Banner -->
-      <header class="banner2 color1">
+<!-- Main page Banner -->
+      <header class="banner2 color1" aria-hidden="true">
         <div class="container-fluid">
           <div class="row">
             <div id="particles-js"></div>
