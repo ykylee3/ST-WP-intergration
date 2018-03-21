@@ -2,8 +2,8 @@
 
   <div class="jumbotron">
     <div class="container">
-      <div class="img-fluid mx-auto d-block text-center" id="logo">
-        <img class="logoimg animated fadeInUp" src="<?php echo get_template_directory_uri();?>/assets/STE_logo_201216.png">
+      <div class="img-fluid mx-auto d-block text-center" id="logo" aria-hidden="true">
+        <img class="logoimg animated fadeInUp" src="<?php echo get_template_directory_uri();?>/assets/STE_logo_201216.png" aria-hidden="true">
       </div>
     </div>
   </div>
@@ -12,7 +12,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-        <img class="img-fluid" src="<?php echo get_template_directory_uri();?>/assets/spock.jpg" alt="spock"></img>
+        <img class="img-fluid" src="<?php echo get_template_directory_uri();?>/assets/spock.jpg" alt="SOME TEXT HERE"></img>
       </div>
       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <div class="startrek_index">
@@ -35,6 +35,7 @@
     </div>
   </div>
 
+<!-- Events, media gallery and twitter area -->
   <div class="secondrow">
     <div class="container">
       <div class="row">
@@ -89,38 +90,41 @@
     </div>
   </div>
 
+<!-- the star trek eire team section -->
   <section class="contact">
     <div class="container-fluid">
       <div class="row">
         <div class="crew col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<!-- change the text class name -->
           <div class="text"><p>The Crew</p></div>
 
         </div>
         <div class="crew col-lg-1 col-md-1 hidden-xl-up"></div>
         <div class="crew col-lg-2 col-md-2 col-sm-12 col-xs-12">
-          <!-- <div class="square"><p>Member</p></div> -->
+
           <div class="text"><p>Ronan</p></div>
-          <img class="img-fluid" id="img_crew" src="<?php echo get_template_directory_uri();?>/assets/spock.jpg" alt="spock"></img>
+          <img class="img-fluid" id="img_crew" src="<?php echo get_template_directory_uri();?>/assets/spock.jpg" alt="SOME TEXT HERE"></
+          >
         </div>
         <div class="crew col-lg-2 col-md-2 col-sm-12 col-xs-12">
-          <!-- <div class="square"><p>Member</p></div> -->
+
           <div class="text"><p>Gary</p></div>
-          <img class="img-fluid" id="img_crew" src="<?php echo get_template_directory_uri();?>/assets/spock.jpg" alt="spock"></img>
+          <img class="img-fluid" id="img_crew" src="<?php echo get_template_directory_uri();?>/assets/spock.jpg" alt="SOME TEXT HERE"></img>
         </div>
         <div class="crew col-lg-2 col-md-2 col-sm-12 col-xs-12">
-          <!-- <div class="square"><p>Member</p></div> -->
+
           <div class="text"><p>Shane</p></div>
-          <img class="img-fluid" id="img_crew" src="<?php echo get_template_directory_uri();?>/assets/spock.jpg" alt="spock"></img>
+          <img class="img-fluid" id="img_crew" src="<?php echo get_template_directory_uri();?>/assets/spock.jpg" alt="SOME TEXT HERE"></img>
         </div>
         <div class="crew col-lg-2 col-md-2 col-sm-12 col-xs-12">
-          <!-- <div class="square"><p>Member</p></div> -->
+
           <div class="text"><p>Darryn</p></div>
-          <img class="img-fluid" id="img_crew" src="<?php echo get_template_directory_uri();?>/assets/spock.jpg" alt="spock"></img>
+          <img class="img-fluid" id="img_crew" src="<?php echo get_template_directory_uri();?>/assets/spock.jpg" alt="SOME TEXT HERE"></img>
         </div>
         <div class="crew col-lg-2 col-md-2 col-sm-12 col-xs-12">
-          <!-- <div class="square"><p>Member</p></div> -->
+
           <div class="text"><p>Ciarán</p></div>
-          <img class="img-fluid" id="img_crew" src="<?php echo get_template_directory_uri();?>/assets/spock.jpg" alt="spock"></img>
+          <img class="img-fluid" id="img_crew" src="<?php echo get_template_directory_uri();?>/assets/spock.jpg" alt="SOME TEXT HERE"></img>
         </div>
         <div class="crew col-lg-1 col-md-1 hidden-xl-up"></div>
       </div>
