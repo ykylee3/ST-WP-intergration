@@ -1,21 +1,22 @@
-<!-- This is the template for category Articles -->
+<!-- Articles category template-->
 
 <?php get_header(); ?>
 
-<!-- Banner -->
+<!-- Main page banner -->
 <header class="banner2 color2">
   <div class="container-fluid">
     <div class="row">
-      <div id="particles-js"></div>
+      <div id="particles-js" aria-hidden="true"></div>
     </div>
   </div>
 </header>
 
+<!-- articles content area -->
 <div class="container" id="articlehead">
   <h2>Articles</h2>
 </div>
 
-<!-- Article section begins here -->
+<!-- Article section posts begins here -->
 <section class="article">
   <div class="container">
     <div class="row">
@@ -61,7 +62,7 @@
                 <div class="italic">
                   <p class="post-meta">Posted by <?php the_author_posts_link(); ?> on <?php the_time('F j, Y'); ?></p>
                 </div>
-        <p class="post-subtitle"><?php the_content(); ?></p>
+                <p class="post-subtitle"><?php the_content(); ?></p>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -76,6 +77,7 @@
       <p>Sorry no posts yet.</p>
     <?php endif; ?>
 
+<!-- articles sidebar -->
     <div id="widgetarea" class="col-lg-2 col-md-2 col-sm-12 col-xs-12 sidebar-module">
         <?php get_sidebar(); ?>
     </div>
@@ -83,8 +85,6 @@
   </div>
 </div>
 </section>
-
-
 
 <!-- php footer function -->
 <?php get_footer(); ?>
