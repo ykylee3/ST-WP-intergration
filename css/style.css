@@ -35,14 +35,13 @@ body {
 
 h1 {
   font-size: 2.5em;
-  /* font-family: Federation, Helvetica; */
 }
 
 h2 {
   font-size: 2em;
   color: white;
 }
-
+/* Navigation Menu */
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
   background-color: #fff;
@@ -87,7 +86,7 @@ h2 {
   background-color: transparent;
 }
 
-/* Sets the backgrounf banner image */
+/* Sets the background banner image */
 .jumbotron{
   background-image: url("../assets/earth-space.jpg");
   background-size: cover;
