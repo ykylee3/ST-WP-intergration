@@ -27,9 +27,9 @@
           <div id="icons">
             <h5>Follow Us</h5>
             <ul class="list-inline">
-              <a href="https://twitter.com/startrekeire/" target="_blank"><li class="list-inline-item"><i class="fab twitter fa-twitter-square fa-3x"></i></li></a>
-              <a href="https://www.facebook.com/startrekeire/" target="_blank"><li class="list-inline-item"><i class="fab facebook fa-facebook-square fa-3x"></i></li></a>
-              <a href="https://www.youtube.com/channel/UCIgCPEEvSShmmJd3UJe-vlw" target="_blank"><li class="list-inline-item"><i class="fab youtube fa-youtube-square fa-3x"></i></li></a>
+              <a href="https://twitter.com/startrekeire/" target="_blank" alt="Follow us on Twitter"><li class="list-inline-item"><i class="fab twitter fa-twitter-square fa-3x"></i></li></a>
+              <a href="https://www.facebook.com/startrekeire/" target="_blank" alt="Follow us on Facebook"><li class="list-inline-item"><i class="fab facebook fa-facebook-square fa-3x"></i></li></a>
+              <a href="https://www.youtube.com/channel/UCIgCPEEvSShmmJd3UJe-vlw" target="_blank" alt="Follow us on Youtube"><li class="list-inline-item"><i class="fab youtube fa-youtube-square fa-3x"></i></li></a>
             </ul>
           </div>
         </div>
