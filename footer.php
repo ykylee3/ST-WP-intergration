@@ -1,7 +1,10 @@
-<!-- Sitemap and other information -->
+<!-- footer template -->
+
+<!-- footer information -->
 <section class="footer">
   <div class="container">
     <div class="row">
+      <!-- sitemap column -->
       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <div class="footer_box">
           <div class="footer_header">
@@ -20,6 +23,7 @@
           </div>
         </div>
       </div>
+      <!-- contact and social media column -->
       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <div class="footer_content">
           <h5>Contact Us</h5>
@@ -27,13 +31,14 @@
           <div id="icons">
             <h5>Follow Us</h5>
             <ul class="list-inline">
-              <a href="https://twitter.com/startrekeire/" target="_blank"><li class="list-inline-item"><i class="fab twitter fa-twitter-square fa-3x"></i></li></a>
-              <a href="https://www.facebook.com/startrekeire/" target="_blank"><li class="list-inline-item"><i class="fab facebook fa-facebook-square fa-3x"></i></li></a>
-              <a href="https://www.youtube.com/channel/UCIgCPEEvSShmmJd3UJe-vlw" target="_blank"><li class="list-inline-item"><i class="fab youtube fa-youtube-square fa-3x"></i></li></a>
+              <a href="https://twitter.com/startrekeire/" target="_blank" alt="Follow us on Twitter"><li class="list-inline-item"><i class="fab twitter fa-twitter-square fa-3x"></i></li></a>
+              <a href="https://www.facebook.com/startrekeire/" target="_blank" alt="Follow us on Facebook"><li class="list-inline-item"><i class="fab facebook fa-facebook-square fa-3x"></i></li></a>
+              <a href="https://www.youtube.com/channel/UCIgCPEEvSShmmJd3UJe-vlw" target="_blank" alt="Follow us on Youtube"><li class="list-inline-item"><i class="fab youtube fa-youtube-square fa-3x"></i></li></a>
             </ul>
           </div>
         </div>
       </div>
+      <!-- subscribe column -->
       <div class="fot_col1 col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <div>
           <!-- Begin MailChimp Signup Form -->
@@ -59,13 +64,18 @@
       </div>
     </div>
   </div>
-</div>
-</div>
+  
+<!--   apparently these two </div> tags are not closing anything -->
+<!-- </div>
+</div> -->
+  
+<!-- copyright -->  
 <div class="container">
 <div class="mastfoot">
   <div class="inner">
     <p>&copy; 2018, Star Trek Éire</p>
   </div>
+</div>
 </div>
 </section>
 

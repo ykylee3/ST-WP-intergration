@@ -1,16 +1,17 @@
-<!-- This is the template for category Behind The Scene-->
+<!-- Behind The Scenes category template-->
 
 <?php get_header(); ?>
 
-<!-- Banner -->
+<!-- Main page banner -->
       <header class="banner2 color1">
         <div class="container-fluid">
           <div class="row">
-            <div id="particles-js"></div>
+            <div id="particles-js" aria-hidden="true"></div>
           </div>
         </div>
       </header>
 
+<!-- content area -->
       <div class="container" id="articlehead">
         <h2>Behind The Scenes</h2>
       </div>
@@ -53,5 +54,5 @@
       </div>
       </div>
 
-
+<!-- footer template -->
 <?php get_footer();?>

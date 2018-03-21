@@ -1,22 +1,22 @@
-<!-- This is the template for page About-->
+<!-- About page template -->
 
 <?php get_header(); ?>
+
+<!-- main page image -->
 <div class="jumbotron">
       <div class="container">
-        <div class="img-fluid mx-auto d-block text-center" id="logo">
-          <img class="logoimg animated fadeInUp" src="<?php echo get_template_directory_uri();?>/assets/STE_logo_201216.png">
+        <div class="img-fluid mx-auto d-block text-center" id="logo" aria-hidden="true">
+          <img class="logoimg animated fadeInUp" src="<?php echo get_template_directory_uri();?>/assets/STE_logo_201216.png" alt="Star Trek Eire logo" aria-hidden="true">
         </div>
       </div>
     </div>
 
-<!-- First row -->
+<!-- First row: about star trek eire-->
  <section class="first">
    <div class="container">
      <div class="row">
       <div class="col-lg-5 col-md-5 col-sm-4 col-xs-12">
-        <div class="img-fluid"><img id="ste_about" src="<?php echo get_template_directory_uri();?>/assets/startrekeire_about.jpg" alt="star trek group"></div>
-
-
+        <div class="img-fluid"><img id="ste_about" src="<?php echo get_template_directory_uri();?>/assets/startrekeire_about.jpg" alt="star trek eire group" aria-hidden="true"></div>
       </div>
       <div class="about col-lg-7 col-md-7 col-sm-12 col-xs-12">
         <h2>About Star Trek Éire</h2>
@@ -36,26 +36,27 @@
     </div>
   </div>
  </section>
-<!-- second row -->
+
+<!-- second row: about the clubhouse-->
   <section class="second">
     <div class="container-fluid">
       <div class="about_club">
         <div class="container">
-      <div class="row">
-      <div class="about about_club col-lg-7 col-md-7 col-sm-9 col-xs-12">
-        <h2>The Clubhouse</h2>
-        <p>The Clubhouse is a non-profit organization part of a global network
-          of 105 Clubhouses that provides a safe and creative learning environment in
-          technology for young people between the ages of 10 and 18.</p>
-          <a class="btn btn-primary" href="http://theclubhouse.ie/" role="button">Know More</a>
-      </div>
-      <div class="col-lg-5 col-md-5 col-sm-7 col-xs-12">
-        <div class="img-fluid"><img id="clubhouse_about" src="<?php echo get_template_directory_uri();?>/assets/clubhouse.jpg" alt="kid's equipments image"></div>
-      </div>
+          <div class="row">
+            <div class="about about_club col-lg-7 col-md-7 col-sm-9 col-xs-12">
+               <h2>The Clubhouse</h2>
+               <p>The Clubhouse is a non-profit organization part of a global network
+               of 105 Clubhouses that provides a safe and creative learning environment in
+               technology for young people between the ages of 10 and 18.</p>
+               <a class="btn btn-primary" href="http://theclubhouse.ie/" role="button">Know More</a>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-7 col-xs-12">
+              <div class="img-fluid"><img id="clubhouse_about" src="<?php echo get_template_directory_uri();?>/assets/clubhouse.jpg" alt="The clubhouse student's equipments" aria-hidden="true"></div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-  </div>
-</div>
   </section>
 
 <?php get_footer();?>

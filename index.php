@@ -1,18 +1,24 @@
+<!-- Star Trek Eire index template -->
+
+<!-- header template -->
 <?php get_header(); ?>
 
+<!-- Main page Banner -->
   <div class="jumbotron">
     <div class="container">
-      <div class="img-fluid mx-auto d-block text-center" id="logo">
-        <img class="logoimg animated fadeInUp" src="<?php echo get_template_directory_uri();?>/assets/STE_logo_201216.png">
+      <div class="img-fluid mx-auto d-block text-center" id="logo" aria-hidden="true">
+        <img class="logoimg animated fadeInUp" src="<?php echo get_template_directory_uri();?>/assets/STE_logo_201216.png" aria-hidden="true">
       </div>
     </div>
   </div>
 
+<!-- star trek eire and the clubhouse area -->
 <div class="firstrow">
   <div class="container">
     <div class="row">
+    <!-- star trek eire image and text description columns -->
       <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-        <img class="img-fluid" src="<?php echo get_template_directory_uri();?>/assets/spock.jpg" alt="spock"></img>
+        <img class="img-fluid" src="<?php echo get_template_directory_uri();?>/assets/spock.jpg" alt="SOME TEXT HERE">
       </div>
       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <div class="startrek_index">
@@ -24,6 +30,7 @@
             <p><a class="btn btn-primary" href="#" role="button" style="background: #5d5d5d; border-color: #5d5d5d">Learn more</a></p>
           </div>
         </div>
+      <!-- the clubhouse description column -->
         <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
           <div class="clubhouse">
             <h1 class="index_title"><a href="about.html">The Clubhouse</a></h1>
@@ -35,13 +42,16 @@
     </div>
   </div>
 
+<!-- Events, media gallery and twitter area -->
   <div class="secondrow">
     <div class="container">
       <div class="row">
+      <!-- events -->
         <div class="events_index col-lg-5 col-md-5 col-sm-12 col-xs-12">
           <h2>Events</h2>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         </div>
+        <!-- Gallery -->
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
           <h2>Gallery</h2>
           <div class="container">
@@ -75,13 +85,14 @@
               </div>
           </div>
         </div>
-
+        
+      <!-- twitter plugin -->
         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
           <h2>Twitter</h2>
           <div class="twitter">
             <div class="container">
               <a class="twitter-timeline" href="https://twitter.com/startrekeire?ref_src=twsrc%5Etfw" data-chrome="nofooter noheader" data-theme="dark" data-height="400">Tweets by startrekeire</a>
-              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              <script async src="https://platform.twitter.com/widgets.js"></script>
             </div>
         </div>
       </div>
@@ -89,42 +100,43 @@
     </div>
   </div>
 
+<!-- the star trek eire team section -->
   <section class="contact">
     <div class="container-fluid">
       <div class="row">
         <div class="crew col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <div class="text"><p>The Crew</p></div>
-
+          
+          
+<!-- change the text class name -->
+          <div class="text"><h2>The Crew</h2></div>
         </div>
-        <div class="crew col-lg-1 col-md-1 hidden-xl-up"></div>
+        
+        
+        <div class="crew col-lg-1 col-md-1 hidden-xl-up" aria-hidden="true"></div>
         <div class="crew col-lg-2 col-md-2 col-sm-12 col-xs-12">
-          <!-- <div class="square"><p>Member</p></div> -->
           <div class="text"><p>Ronan</p></div>
-          <img class="img-fluid" id="img_crew" src="<?php echo get_template_directory_uri();?>/assets/spock.jpg" alt="spock"></img>
+          <img class="img-fluid img_crew" src="<?php echo get_template_directory_uri();?>/assets/spock.jpg" alt="SOME TEXT HERE">
         </div>
         <div class="crew col-lg-2 col-md-2 col-sm-12 col-xs-12">
-          <!-- <div class="square"><p>Member</p></div> -->
           <div class="text"><p>Gary</p></div>
-          <img class="img-fluid" id="img_crew" src="<?php echo get_template_directory_uri();?>/assets/spock.jpg" alt="spock"></img>
+          <img class="img-fluid img_crew" src="<?php echo get_template_directory_uri();?>/assets/spock.jpg" alt="SOME TEXT HERE">
         </div>
         <div class="crew col-lg-2 col-md-2 col-sm-12 col-xs-12">
-          <!-- <div class="square"><p>Member</p></div> -->
           <div class="text"><p>Shane</p></div>
-          <img class="img-fluid" id="img_crew" src="<?php echo get_template_directory_uri();?>/assets/spock.jpg" alt="spock"></img>
+          <img class="img-fluid img_crew" src="<?php echo get_template_directory_uri();?>/assets/spock.jpg" alt="SOME TEXT HERE">
         </div>
         <div class="crew col-lg-2 col-md-2 col-sm-12 col-xs-12">
-          <!-- <div class="square"><p>Member</p></div> -->
           <div class="text"><p>Darryn</p></div>
-          <img class="img-fluid" id="img_crew" src="<?php echo get_template_directory_uri();?>/assets/spock.jpg" alt="spock"></img>
+          <img class="img-fluid img_crew" src="<?php echo get_template_directory_uri();?>/assets/spock.jpg" alt="SOME TEXT HERE">
         </div>
         <div class="crew col-lg-2 col-md-2 col-sm-12 col-xs-12">
-          <!-- <div class="square"><p>Member</p></div> -->
           <div class="text"><p>Ciarán</p></div>
-          <img class="img-fluid" id="img_crew" src="<?php echo get_template_directory_uri();?>/assets/spock.jpg" alt="spock"></img>
+          <img class="img-fluid img_crew" src="<?php echo get_template_directory_uri();?>/assets/spock.jpg" alt="SOME TEXT HERE">
         </div>
-        <div class="crew col-lg-1 col-md-1 hidden-xl-up"></div>
+        <div class="crew col-lg-1 col-md-1 hidden-xl-up" aria-hidden="true"></div>
       </div>
     </div>
   </section>
 
+<!-- footer template -->
 <?php get_footer(); ?>
