@@ -1,5 +1,6 @@
 <!-- Merchandise page template-->
 
+<!-- header template -->
 <?php get_header(); ?>
 
 <!-- Main page Banner -->
@@ -15,6 +16,5 @@
         <h2>Merchandise</h2>
       </div>
 
-      
-
+<!-- footer template -->
 <?php get_footer();?>
