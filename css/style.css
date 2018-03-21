@@ -87,6 +87,7 @@ h2 {
 }
 
 /* Sets the background banner image */
+
 .jumbotron{
   background-image: url("../assets/earth-space.jpg");
   background-size: cover;
@@ -96,29 +97,14 @@ h2 {
   width: 100%;
 }
 
-/* style for banner containing logo */
-/* .banner {
-  text-align:center;
-  width: 100%;
-  height: 600px; */
-  /* padding-left: 100px;
-  padding-right: 100px; */
-  /* background-size: cover;
-  margin-top: -10px;
-  margin-bottom: 5px;
-  position: relative;
-  z-index: 0;
-}
-
-.banner2 {
-  position: relative;
-  height: 400px;
-} */
+/* article page styling */
 
 #articles_main {
   width: 100%;
   height: 50%;
 }
+
+/* events page styling */
 
 #events_main {
   width: 100%;
@@ -127,13 +113,7 @@ h2 {
   margin: 0 auto;
 }
 
-/* #banner_img {
-  position: absolute;
-  width: 100%;
-  height: 600px;
-  background-size: cover;
-  background-repeat: repeat-x;
-} */
+/* Logo in the banner and navigation bar */
 
 #logo {
   z-index:3;
@@ -181,6 +161,7 @@ h2 {
 }
 
 /* Second row of content */
+
 .secondrow p {
   text-align: left;
 }
@@ -204,17 +185,15 @@ h2 {
   padding: 20px;
   text-align: center;
 }
+
 /* style for rows in every containers */
-/* .row {
-  margin:0;
-  text-align: center;
-} */
 
 .about .col-lg-7 .col-md-7 .col-sm-9 .col-xs-12{
     background: white;
 }
 
 /* column stylings */
+
 .col-lg-2,
 .col-lg-3,
 .col-lg-4,
@@ -223,11 +202,7 @@ h2 {
 .col-lg-7,
 .col-lg-8 {
   color: white;
-  background-color: rgba(255, 255, 255, 0)
-  /* background-color: rgba(33,33,33,0.7); */
-  /* opacity: 0.7; */
-  /* border-right: solid; */
-  /* background-color: #FFF59D; */
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .col-md-2,
@@ -238,8 +213,7 @@ h2 {
 .col-md-7,
 .col-md-8 {
   color: white;
-  background-color: rgba(255, 255, 255, 0)
-  /* background-color: #FFF59D; */
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .col-sm-12 {
@@ -257,18 +231,15 @@ h2 {
 }
 
 .col-lg-4:hover, .col-lg-8:hover {
-  /* cursor: pointer; */
-  /* background-color: #FFEB3B; */
   transition: all 0.5s ease-in-out;
 }
 
 .col-md-3:hover, .col-md-6:hover {
-  /* cursor: pointer; */
-  /*background-color: #FF7043; */
   transition: all 0.2s ease-in-out;
 }
 
 /* container for contact details */
+
 .contact {
   /* position: relative; */
   margin: 0 auto;
@@ -301,7 +272,8 @@ h2 {
   font-weight: 200;
 }
 
-/* image holders */
+/* image holders for the crew members */
+
 .square p {
   /* padding-top: 60px;
   padding-left: 5px; */
@@ -315,7 +287,7 @@ h2 {
   margin: 0 auto;
 }
 
-#img_crew{
+#img_crew 
   max-width: 90%;
 }
 
@@ -326,9 +298,6 @@ h2 {
   height: 170px;
   width: 170px;
   margin: 0 auto;
-  /* margin-top: 3px;
-  margin-left: 150px;
-  padding: 20px; */
   display: inline-block;
   -webkit-transition: all 1.5s ease-in-out;
   -moz-transition: all 1.5s ease-in-out;
@@ -343,10 +312,9 @@ h2 {
   transition: all 0.5s ease-in-out;
 }
 
+/* Events section on the homepage */
+
 .events_index {
-  /* background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center; */
   height: 100%;
   width: 100%;
   padding: 20px;
@@ -354,6 +322,7 @@ h2 {
 }
 
 /* Footer section */
+
 .footer {
   clear: both;
   position: relative;
@@ -375,10 +344,9 @@ h2 {
 .footer_content{
   text-align: left;
   text-decoration: none;
-  /* padding-left: 20px;
-  padding-right: 20px; */
   vertical-align: top;
 }
+
 .footer_content a{
   color: white;
 }
@@ -387,6 +355,7 @@ h2 {
   font-size: 0.9em;
 }
 
+/* ---- */
 .img_art {
   margin: 0 auto;
   padding: 10px;
@@ -480,7 +449,8 @@ h2 {
   height: auto;
 }
 
-/*gallery styles*/
+/* media gallery styling */
+
 .container.gallery-container {
     background-color: rgba(255, 255, 255, 0.8);
     color: #000000;
@@ -513,6 +483,7 @@ h2 {
 }
 
 /* Override bootstrap column paddings */
+
 .tz-gallery .row > div {
     padding: 2px;
 }
@@ -538,7 +509,6 @@ h2 {
     z-index: 9000;
     transition: 0.4s;
 }
-
 
 .tz-gallery .lightbox:after {
     position: absolute;
@@ -571,12 +541,12 @@ h2 {
 
 .mastfoot {
   color: white;
-  /* color: rgba(255,255,255,.5); */
   background-color: #212121;
   font-size: 0.8em;
 }
 
-/* Padding for spacing */
+/* Padding for spacing in the copyright */
+
 .inner {
   text-align: right;
   padding-bottom: 5px;
