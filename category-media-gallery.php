@@ -1,21 +1,23 @@
-<!-- This is the template for category Media Gallery -->
+<!-- Media Gallery category template -->
 
+<!-- header template -->
 <?php get_header(); ?>
 
-<!-- Banner -->
+<!-- Main page Banner -->
 <header class="banner2 color3">
   <div class="container-fluid">
     <div class="row">
-      <div id="particles-js"></div>
+      <div id="particles-js" aria-hidden="true"></div>
     </div>
   </div>
 </header>
 
+<!-- main content -->
 <div class="container" id="articlehead">
   <h2>Media Galeery</h2>
 </div>
 
-
+<!-- content template -->
 <div class="container gallery-container">
   <div class="gallery">
     <div class="row">
@@ -54,4 +56,5 @@
 </div>
 </div>
 
+<!-- footer template -->
 <?php get_footer();?>
