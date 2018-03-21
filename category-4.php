@@ -1,20 +1,23 @@
-<!-- This is the template for category Past Events -->
+<!-- Past Events category template-->
 
+<!-- header template-->
 <?php get_header(); ?>
 
-<!-- Banner -->
+<!-- Main Banner -->
 <header class="banner2 color5">
   <div class="container-fluid">
     <div class="row">
-      <div id="particles-js"></div>
+      <div id="particles-js" aria-hidden="true"></div>
     </div>
   </div>
 </header>
 
+<!-- events content area -->
 <div class="container" id="articlehead">
   <h2>Past Events</h2>
 </div>
 
+<!-- events posts template -->
 <div class="container">
   <div class="row">
     <div class="events">
@@ -57,4 +60,5 @@
 </div>
 </div>
 
+<!-- footer template-->
 <?php get_footer();?>
