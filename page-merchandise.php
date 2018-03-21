@@ -12,6 +12,7 @@
         </div>
       </header>
 
+<!-- merchandise content -->
       <div class="container" id="articlehead">
         <h2>Merchandise</h2>
       </div>
