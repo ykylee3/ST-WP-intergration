@@ -1,6 +1,8 @@
-/* Custom stylesheet for Star Trek Eire website */
-
-/* style for body */
+/* Custom stylesheet for Star Trek Eire - Master Version */
+/* Created by Bebito Samji */
+/* Edited by Yoki 04/03/2018 */
+/*******************************************************/
+/* Star Trek Fonts used for the body */
 @font-face {
   font-family: Federation;
   /* src: url(fonts/raleway.tiff); */
@@ -11,6 +13,7 @@
   /* src: url(fonts/raleway.tiff); */
 }
 
+/* Styles common throughout the pages */
 html {
   font-size: 16px;
   line-height: 23px;
@@ -40,6 +43,14 @@ h2 {
   color: white;
 }
 
+.img-fluid {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+
+/*******************************************************/
+/* Navigation bar styling */
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
   background-color: #fff;
@@ -84,56 +95,6 @@ h2 {
   background-color: transparent;
 }
 
-/* Sets the backgrounf banner image */
-.jumbotron{
-  background-image: url("/wordpress_local/wp-content/themes/idm/assets/earth-space.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 700px;
-  width: 100%;
-}
-
-/* style for banner containing logo */
-
-/* .banner {
-  text-align:center;
-  width: 100%;
-  height: 600px; */
-  /* padding-left: 100px;
-  padding-right: 100px; */
-  /* background-size: cover;
-  margin-top: -10px;
-  margin-bottom: 5px;
-  position: relative;
-  z-index: 0;
-}
-
-.banner2 {
-  position: relative;
-  height: 400px;
-} */
-
-#articles_main {
-  width: 100%;
-  height: 50%;
-}
-
-#events_main {
-  width: 100%;
-  height: 100%;
-  height: auto;
-  margin: 0 auto;
-}
-
-/* #banner_img {
-  position: absolute;
-  width: 100%;
-  height: 600px;
-  background-size: cover;
-  background-repeat: repeat-x;
-} */
-
 #logo {
   z-index:3;
 }
@@ -143,44 +104,32 @@ h2 {
   height: 50px;
 }
 
-/*Basic styling of rows*/
-.firstrow,
-.secondrow {
-  padding-top: 20px;
-  padding-bottom: 20px;
+/*******************************************************/
+/* Sets the background banner image */
+.jumbotron{
+  background-image: url("/wordpress_local/wp-content/themes/idm/assets/earth-space.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 700px;
+  width: 100%;
 }
 
-/* First row of content */
+/*******************************************************/
+/* Styles for the homepage - begins */
 
-.firstrow p {
+/*about Star Trek*/
+.startrek_index {
   text-align: left;
 }
 
-.firstrow a {
+.index_title a {
   text-decoration: none;
   color: white;
 }
 
-.learn_more {
-  text-decoration: underline;
-  text-align: left;
-}
-
-/* Second row of content */
-.secondrow p {
-  text-align: left;
-}
-
-.index_title a{
-  text-decoration: none;
-  color: white;
-}
-
-.startrek_index{
-  text-align: left;
-}
-
-.clubhouse{
+/*About clubhouse*/
+.clubhouse {
   background-image: url("/wordpress_local/wp-content/themes/idm/assets/clubhouse_index.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -190,220 +139,13 @@ h2 {
   padding: 20px;
   text-align: center;
 }
-/* style for rows in every containers */
-/* .row {
-  margin:0;
-  text-align: center;
-} */
 
-.about .col-lg-7 .col-md-7 .col-sm-9 .col-xs-12{
-    background: white;
-}
-
-/* column stylings */
-.col-lg-2,
-.col-lg-3,
-.col-lg-4,
-.col-lg-5,
-.col-lg-6,
-.col-lg-7,
-.col-lg-8 {
-  color: white;
-  background-color: rgba(255, 255, 255, 0)
-  /* background-color: rgba(33,33,33,0.7); */
-  /* opacity: 0.7; */
-  /* border-right: solid; */
-  /* background-color: #FFF59D; */
-}
-
-.col-md-2,
-.col-md-3,
-.col-md-4,
-.col-md-5,
-.col-md-6,
-.col-md-7,
-.col-md-8 {
-  color: white;
-  background-color: rgba(255, 255, 255, 0)
-  /* background-color: #FFF59D; */
-}
-
-.col-sm-12 {
-  clear: both;
-  color: white;
-  /* border-right: solid; */
-  background-color: rgba(255, 255, 255, 0)
-}
-
-.col-xs-12 {
-  clear: both;
-  color: white;
-  /* border-right: solid; */
-  background-color: rgba(255, 255, 255, 0);
-}
-
-.col-lg-4:hover, .col-lg-8:hover {
-  /* cursor: pointer; */
-  /* background-color: #FFEB3B; */
-  transition: all 0.5s ease-in-out;
-}
-
-.col-md-3:hover, .col-md-6:hover {
-  /* cursor: pointer; */
-  /*background-color: #FF7043; */
-  transition: all 0.2s ease-in-out;
-}
-
-/* container for contact details */
-.contact {
-  /* position: relative; */
-  margin: 0 auto;
-  clear: both;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  align-items: center;
-  background-color: white;
-  padding-top: 10px;
-  padding-bottom: 20px;
-}
-
-.text {
-  position: relative;
-  text-align: center;
-  margin: 0px;
-  color: black;
-}
-
-.text h1 {
-  text-align: center;
-  margin: 0px;
-}
-
-.text p {
-  text-align: center;
-  padding-top: 5px;
-  /* padding-left: 10%; */
-  font-size: 2em;
-  font-weight: 200;
-}
-
-/* image holders */
-.square p {
-  /* padding-top: 60px;
-  padding-left: 5px; */
-  font-size: 1em;
-}
-
-.crew {
-  position: relative;
-  background-color: white;
-  vertical-align: middle;
-  margin: 0 auto;
-}
-
-#img_crew{
-  max-width: 90%;
-}
-
-.square {
-  vertical-align: middle;
-  background: #D0D3D4;
-  border-radius: 96%;
-  height: 170px;
-  width: 170px;
-  margin: 0 auto;
-  /* margin-top: 3px;
-  margin-left: 150px;
-  padding: 20px; */
-  display: inline-block;
-  -webkit-transition: all 1.5s ease-in-out;
-  -moz-transition: all 1.5s ease-in-out;
-  -o-transition: all 1.5s ease-in-out;
-  transition: all 1.5s ease-in-out;
-}
-
-.square:hover {
-  cursor: pointer;
-  background-color: #9FA8DA;
-  border-radius: 0;
-  transition: all 0.5s ease-in-out;
-}
-
+/*Events section*/
 .events_index {
-  /* background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center; */
   height: 100%;
   width: 100%;
   padding: 20px;
   text-align: center;
-}
-
-/* Footer section */
-.footer {
-  clear: both;
-  position: relative;
-  /* bottom: 0; */
-  color: white;
-  background-color: #212121;
-  padding: 0.7rem;
-  margin-top: 20px;
-}
-
-.footer h5{
-  padding-bottom: 10px;
-}
-
-.footer_header h5{
-  text-align: left;
-}
-
-.footer_content{
-  text-align: left;
-  text-decoration: none;
-  /* padding-left: 20px;
-  padding-right: 20px; */
-  vertical-align: top;
-}
-.footer_content a{
-  color: white;
-}
-
-.footer_content li{
-  font-size: 0.9em;
-}
-
-.img_art {
-  margin: 0 auto;
-  padding: 10px;
-}
-
-.image_article{
-  max-width: 100%;
-  float: right;
-  padding: 10px;
-}
-
-.art {
-  text-align: left;
-  color: white;
-  padding: 10px;
-}
-
-.art a {
-  text-decoration: none;
-  color: white;
-}
-
-.art a:hover {
-  color: #615C5B;
-}
-
-.art h2 {
-  text-align: left;
-  color: white;
-  font-weight: bold;
-  padding: 10px;
 }
 
 .image_events {
@@ -412,61 +154,7 @@ h2 {
   padding: 10px;
 }
 
-.about_img {
-  max-width: 90%;
-  max-height: 100%;
-}
-
-.events {
-  text-align: left;
-  color: white;
-  padding: 10px;
-}
-
-.events a {
-  text-decoration: none;
-  color: white;
-}
-
-.events a:hover {
-  color: #615C5B;
-}
-
-.events h2 {
-  text-align: left;
-  color: white;
-  font-weight: bold;
-  padding: 10px;
-}
-
-.about{
-  text-align: left;
-  padding-bottom: 30px;
-}
-
-.about_club{
-  background: white;
-  color: black;
-  padding: 20px;
-}
-
-.about_club h2{
-  color: black;
-}
-
-#clubhouse_about{
-  max-width: 100%;
-  max-height: 100%;
-  height: auto;
-}
-
-#ste_about{
-  max-width: 100%;
-  max-height: 100%;
-  height: auto;
-}
-
-/*gallery styles*/
+/*gallery widget*/
 .container.gallery-container {
     background-color: rgba(255, 255, 255, 0.9);
     color: #000000;
@@ -493,14 +181,12 @@ h2 {
   background-color: rgba(255, 255, 255, 0);
 }
 
-/* Override bootstrap column paddings */
+/* Override bootstrap column paddings for gallery */
 .gallery .row > div {
     padding: 2px;
 }
 
 .gallery .thumbnail img {
-  /* width:200px;
-  height:200px; */
     max-width: 90%;
     border-radius: 0;
     position: relative;
@@ -510,16 +196,274 @@ h2 {
     background-color: transparent !important;
 }
 
-@media(max-width: 768px) {
-    body {
-        padding: 0;
-    }
+/* heading for the galleries */
+.gallery h3{
+  padding-top: 10px;
+  color: black;
 }
 
-/*copyright footer*/
+.gallery h6{
+  padding-top: 10px;
+  color: black;
+  font-size: 0.8em;
+  text-align: right;
+}
+
+.g-content{
+margin: 10px;
+}
+
+/* Twitter embed format */
+.twitter{
+  padding: 20px 0;
+}
+
+/* container for contact details */
+.contact {
+  margin: 0 auto;
+  clear: both;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  align-items: center;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.text {
+  position: relative;
+  text-align: center;
+  margin: 0px;
+  color: black;
+}
+
+.text h1 {
+  text-align: center;
+  margin: 0px;
+}
+
+.text p {
+  text-align: center;
+  padding-top: 5px;
+  font-size: 2em;
+  font-weight: 200;
+}
+
+.crew {
+  position: relative;
+  background-color: white;
+  vertical-align: middle;
+  margin: 0 auto;
+}
+
+#img_crew{
+  max-width: 90%;
+}
+
+/*******************************************************/
+
+/* About page styles - begins here */
+
+/*Basic styling of rows*/
+.firstrow, .secondrow {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* First row of content */
+.firstrow p {
+  text-align: left;
+}
+
+.firstrow a {
+  text-decoration: none;
+  color: white;
+}
+
+.learn_more {
+  text-decoration: underline;
+  text-align: left;
+}
+
+/* Second row of content */
+.secondrow p {
+  text-align: left;
+}
+
+.about .col-lg-7 .col-md-7 .col-sm-9 .col-xs-12{
+    background: white;
+}
+
+.about {
+  text-align: left;
+  padding-bottom: 30px;
+}
+
+.about_club{
+  background: white;
+  color: black;
+  padding: 20px;
+}
+
+.about_club h2{
+  color: black;
+}
+
+#clubhouse_about{
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+
+#ste_about{
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+
+/*******************************************************/
+
+/* Article page styles - begins here */
+
+/* fontface for the articles */
+ @font-face {
+   font-family: 'mytitlefont';
+   src: url('/wordpress_local/wp-content/themes/idm/fonts/TNG_Title.ttf') format('truetype');
+  }
+
+#articlehead {
+  font-family: 'mytitlefont';
+  font-size: 1.8em;
+  padding: 10px;
+  }
+  
+#articles_main {
+  width: 100%;
+  height: 50%;
+}
+
+/* custom column styles */
+  .custom_col {
+    background-color: rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2%;
+    margin: 5px;
+    padding-right: 5px;
+  }
+
+/* column headings */
+.custom_col h5 {
+  /* font-family: 'mytitlefont'; */
+  font-size: 1.5em;
+  font-style: italic;
+  padding: 10px;
+}
+
+.article {
+  width: 100%;
+  margin: 10px 0px;
+}
+
+/* image in the article */
+#articleimage {
+  padding: 5px;
+  width: inherit;
+  height: 260px;
+}
+
+/* text in the article */
+.article p {
+  text-align: left;
+}
+
+/* heading for the article */
+.article h5 {
+  padding-top: 10px;
+  font-weight: 400;
+}
+
+.article h6{
+  padding-top: 10px;
+  color: black;
+  font-size: 0.8em;
+  text-align: right;
+}
+
+/* column stylings */
+.col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8 {
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8 {
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.col-sm-12 {
+  clear: both;
+  color: white;
+  background-color: rgba(255, 255, 255, 0)
+}
+
+.col-xs-12 {
+  clear: both;
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.col-lg-4:hover, .col-lg-8:hover {
+  /* cursor: pointer; */
+  transition: all 0.5s ease-in-out;
+}
+
+.col-md-3:hover, .col-md-6:hover {
+  /* cursor: pointer; */
+  transition: all 0.2s ease-in-out;
+}
+
+/*******************************************************/
+
+/* Footer Section styles - begins here */
+
+.footer {
+  clear: both;
+  position: relative;
+  color: white;
+  background-color: #212121;
+  padding: 0.7rem;
+  margin-top: 20px;
+}
+
+.footer h5{
+  padding-bottom: 10px;
+}
+
+.footer_header h5{
+  text-align: left;
+}
+
+.footer_content{
+  text-align: left;
+  text-decoration: none;
+  vertical-align: top;
+}
+
+.footer_content a{
+  color: white;
+}
+
+.footer_content li{
+  font-size: 0.9em;
+}
+
+.fot_col1 {
+  text-align: left;
+}
+
+/*copyright*/
 .mastfoot {
   color: white;
-  /* color: rgba(255,255,255,.5); */
   background-color: #212121;
   font-size: 0.8em;
 }
@@ -530,14 +474,40 @@ h2 {
   padding-bottom: 5px;
 }
 
-.img-fluid {
-  max-width: 100%;
-  max-height: 100%;
-  height: auto;
+/*social icons*/
+#icons {
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: -30px;
 }
 
-/* fix by Bebito - 15/03/2018 */
-/* particle system */
+#icons .fab {
+    color: white;
+    margin: 5px 5px;
+    position: relative;
+    bottom: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+#icons .twitter:hover {
+    color:#6cadde;
+    bottom: 5px;
+}
+
+#icons .facebook:hover {
+    color:#3b5998;
+    bottom: 5px;
+}
+
+#icons .youtube:hover {
+    color: rgba(255, 0, 0, 0.7);
+    bottom: 5px;
+}
+
+/*******************************************************/
+
+/* Particle system styles - begins here */
+
 #particles-js {
   position:relative;
   width: 100vw;
@@ -574,163 +544,40 @@ h2 {
     background-color: #f49c22;
   }
 
-#icons {
-    text-align: left;
-    padding-top: 10px;
-    padding-bottom: -30px;
+/*******************************************************/
+/* Events section - begins here */
+
+#events_main {
+  width: 100%;
+  height: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
-#icons .fab {
-    color: white;
-    margin: 5px 5px;
-    position: relative;
-    bottom: 0;
-    transition: all 0.2s ease-in-out;
-}
-
-#icons .twitter:hover {
-    color:#6cadde;
-    bottom: 5px;
-}
-
-#icons .facebook:hover {
-    color:#3b5998;
-    bottom: 5px;
-}
-
-#icons .youtube:hover {
-    color: rgba(255, 0, 0, 0.7);
-    bottom: 5px;
-}
-
-#section_title {
-  position: absolute;
+.events {
+  text-align: left;
   color: white;
-  font-size: 3em;
-  font-weight: bold;
-  z-index: 1;
-}
-
-/* For the articles page */
-/* fontface */
-  @font-face {
-   font-family: 'mytitlefont';
-   src: url('/wordpress_local/wp-content/themes/idm/fonts/TNG_Title.ttf') format('truetype');
-  }
-
-  #articlehead {
-    font-family: 'mytitlefont';
-    font-size: 1.8em;
-    padding: 10px;
-  }
-
-/* for the holding container */
-/* column styles */
-  .custom_col {
-    background-color: rgba(0,0,0,0.1);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 2%;
-    margin: 5px;
-    padding-right: 5px;
-  }
-
-/* column headings */
-.custom_col h5 {
-  /* font-family: 'mytitlefont'; */
-  font-size: 1.5em;
-  font-style: italic;
   padding: 10px;
 }
 
-.article {
-  width: 100%;
-  margin: 10px 0px;
-}
-/* column styles if needed */
-.col-lg-2, .col-lg-3, .col-md-3, .col-sm-4, .col-xs-12 {
-}
+/*.events a {*/
+/*  text-decoration: none;*/
+/*  color: white;*/
+/*}*/
+/**/
+/*.events a:hover {*/
+/*  color: #615C5B;*/
+/*}*/
 
-/* image in the article */
-#articleimage {
-  padding: 5px;
-  width: inherit;
-  height: 260px;
-}
-
-/* text in the article */
-.article p {
+.events h6 {
   text-align: left;
-}
-/* heading for the article */
-.article h5 {
-  padding-top: 10px;
-  font-weight: 400;
-}
-
-.article h6{
-  padding-top: 10px;
-  color: black;
-  font-size: 0.8em;
-  text-align: right;
-}
-
-/* heading for the galleries */
-.gallery h3{
-  padding-top: 10px;
-  color: black;
-}
-
-.gallery h6{
-  padding-top: 10px;
-  color: black;
-  font-size: 0.8em;
-  text-align: right;
-}
-
-.g-content{
-margin: 10px;
-}
-
-/* links for full article */
-#clickme {
-  font-style: italic;
+  color: white;
   font-weight: bold;
-}
-/* buttons on the articles */
-.btn {
-  background-color: #FF4343;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-color: #000;
-  float: left;
+  padding: 10px;
 }
 
-/* Twitter embed format */
-.twitter{
-  padding: 20px 0;
-}
-
-/* modal */
-
-.modal-header h5 {
-  color: black;
-}
-
-.modal-body .italic {
-  color: black;
-  font-style: italic;
-}
-
-.modal-body h6 {
-  color: black;
-}
-
-.modal-body p {
-  color: black;
-}
-
-.modal-body .bold {
-  font-weight: bold;
-}
+/*******************************************************/
+/* Media queries - begins here */
 
 @media screen and (max-width: 480px) {
   .jumbotron{
@@ -771,46 +618,14 @@ margin: 10px;
   }
 }
 
-.fot_col1 {
-  text-align: left;
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 768px) {
-  font-size: 14px;
-
-  #logo {
-  }
-
-  #circle {
-    position: absolute;
-    display: inline-block;
-    /* left: 50%;
-    right: 50%; */
-    /* margin-top: -10px; */
-    font-size: 2em;
-    font-weight: 200;
-    /* padding: 50px; */
-    border-radius: 95%;
-    height: 200px;
-    width: 200px;
-    background-color: #FAFAFA;
-  }
-
-  .square {
-    background: #D0D3D4;
-    border-radius: 96%;
-    height: 100px;
-    width: 100px;
-    margin-top: 3px;
-    margin-left: 5px;
-    padding-bottom: 5px;
-    display: block;
-    -webkit-transition: all 1.5s ease-in-out;
-    -moz-transition: all 1.5s ease-in-out;
-    -o-transition: all 1.5s ease-in-out;
-    transition: all 1.5s ease-in-out;
-  }
-
+  
   .mastfoot {
     clear: both;
     bottom: 0;
@@ -867,3 +682,95 @@ margin: 10px;
     color: #F05F40;
   }
 }
+
+/*******************************************************/
+
+/* Modal box for articles */
+
+.modal-header h5 {
+  color: black;
+}
+
+.modal-body .italic {
+  color: black;
+  font-style: italic;
+}
+
+.modal-body h6 {
+  color: black;
+}
+
+.modal-body p {
+  color: black;
+}
+
+.modal-body .bold {
+  font-weight: bold;
+}
+
+/* links for full article */
+#clickme {
+  font-style: italic;
+  font-weight: bold;
+}
+/* buttons on the articles */
+.btn {
+  background-color: #FF4343;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-color: #000;
+  float: left;
+}
+
+/*******************************************************/
+/*******************************************************/
+.img_art {
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.image_article{
+  max-width: 100%;
+  float: right;
+  padding: 10px;
+}
+
+.art {
+  text-align: left;
+  color: white;
+  padding: 10px;
+}
+
+.art a {
+  text-decoration: none;
+  color: white;
+}
+
+.art a:hover {
+  color: #615C5B;
+}
+
+.art h2 {
+  text-align: left;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.about_img {
+  max-width: 90%;
+  max-height: 100%;
+}
+
+#section_title {
+  position: absolute;
+  color: white;
+  font-size: 3em;
+  font-weight: bold;
+  z-index: 1;
+}
+
+
+
+
+
+
