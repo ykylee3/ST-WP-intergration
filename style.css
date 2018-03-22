@@ -422,6 +422,42 @@ margin: 10px;
   transition: all 0.2s ease-in-out;
 }
 
+/*CSS for the Articles template page*/
+
+.modal-dialog, .modal-lg {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgba();
+    border-radius: 2%;
+    padding: 5px;
+}
+
+.article-title {
+    font-family: ;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+    color: black;
+}
+
+.article-body {
+    font-family: ;
+    font-size: 1.2em;
+    padding: 5px;
+    align-content: center;
+    text-align: justify;
+    color: black;
+}
+
+.article-body .post-meta {
+    font-family: ;
+    font-size: 1em;
+    font-style: italic;
+    color: black;
+    padding: 2px;
+}
+
+
 /*******************************************************/
 
 /* Footer Section styles - begins here */
