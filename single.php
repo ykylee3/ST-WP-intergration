@@ -25,7 +25,7 @@
 							get_template_part( 'template-parts/post/content', get_post_format() );
 
 						?>
-						<div class="col-lg-8 col-md-8 col-sm-10 col-xs-12" role="document">
+						<div class="custom-col-article col-lg-8 col-md-8 col-sm-10 col-xs-12" role="document">
 							<div class="article-content">
 								<div class="article-title">
 									<h5 class="art-title"><?php the_title(); ?></h5>
