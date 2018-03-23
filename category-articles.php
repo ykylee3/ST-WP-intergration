@@ -1,25 +1,27 @@
-<!-- Articles category template-->
+<!-- This is the template for category Articles -->
 
 <?php get_header(); ?>
 
-<!-- Main page banner -->
+<!-- Banner -->
 <header class="banner2 color2">
   <div class="container-fluid">
     <div class="row">
-      <div id="particles-js" aria-hidden="true"></div>
+      <div id="particles-js"></div>
     </div>
   </div>
 </header>
 
-<!-- articles content area -->
 <div class="container" id="articlehead">
   <h2>Articles</h2>
 </div>
 
-<!-- Article section posts begins here -->
-<section class="article">
+<!-- Article section begins here -->
+<div class="article">
   <div class="container">
     <div class="row">
+    <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+      <div class="container-fluid">
+        <div class="row">
       <!-- php loop for posting blogs -->
       <?php
 
@@ -37,17 +39,17 @@
       ?>
 
       <!-- container displaying the blogs -->
-      <div class="custom_col col-lg-3 col-md-3 col-sm-12 col-xs-12">
+      <div class="custom_col col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <!-- the title of the blog -->
         <h5 class="post-title"><?php the_title(); ?></h5>
         <!-- meta data about the author and date of posting -->
         <h6 class="post-meta">Posted by <?php the_author_posts_link(); ?> on <?php the_time('F j, Y'); ?></h6>
         <!-- the excerpt of th blog to be displayed -->
-        <p class="post-subtitle"><?php the_excerpt(); ?></p>
+        <div class="post-subtitle"><?php the_excerpt(); ?></div>
 
 
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#<?php echo get_the_ID(); ?>">Read More</button>
+        <a href="<?php the_permalink(); ?>"><button type="button" class="btn btn-primary btn-sm" >Read More</button>
 
         <div class="modal fade" id="<?php echo get_the_ID(); ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
           <div class="modal-dialog modal-lg" role="document">
@@ -62,7 +64,7 @@
                 <div class="italic">
                   <p class="post-meta">Posted by <?php the_author_posts_link(); ?> on <?php the_time('F j, Y'); ?></p>
                 </div>
-                <p class="post-subtitle"><?php the_content(); ?></p>
+          <p class="post-subtitle"><?php the_content(); ?></p>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -76,15 +78,11 @@
     <?php endwhile; else: ?>
       <p>Sorry no posts yet.</p>
     <?php endif; ?>
-
-<!-- articles sidebar -->
-    <div id="widgetarea" class="col-lg-2 col-md-2 col-sm-12 col-xs-12 sidebar-module">
-        <?php get_sidebar(); ?>
-    </div>
-
+  </div></div>
   </div>
+<?php get_sidebar(); ?>
 </div>
-</section>
-
+</div>
+</div>
 <!-- php footer function -->
 <?php get_footer(); ?>
