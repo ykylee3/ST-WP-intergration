@@ -25,16 +25,16 @@
 							get_template_part( 'template-parts/post/content', get_post_format() );
 
 						?>
-						<div class="modal-dialog modal-lg" role="document">
-							<div class="modal-content">
+						<div class="col-lg-8 col-md-8 col-sm-10 col-xs-12" role="document">
+							<div class="article-content">
 								<div class="article-title">
-									<h5 class="post-title"><?php the_title(); ?></h5>
+									<h5 class="art-title"><?php the_title(); ?></h5>
 								</div>
 								<div class="article-body">
 									<div class="italics">
-									<p class="post-meta">Posted by <?php the_author_posts_link(); ?> on <?php the_time('F j, Y'); ?></p>
+									<p class="art-meta">Posted by <?php the_author_posts_link(); ?> on <?php the_time('F j, Y'); ?></p>
 							   	</div>
-									<p class="post-subtitle"><?php the_content(); ?></p>
+									<p class="art-subtitle"><?php the_content(); ?></p>
 								</div>
 							</div>
 						</div>
