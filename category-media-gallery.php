@@ -14,7 +14,7 @@
 
 <!-- main content -->
 <div class="container" id="articlehead">
-  <h2>Media Galeery</h2>
+  <h2>Media Gallery</h2>
 </div>
 
 <!-- content template -->
