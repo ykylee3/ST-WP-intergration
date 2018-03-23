@@ -422,7 +422,7 @@ margin: 10px;
 
 /*CSS for the Articles template page*/
 
-.modal-dialog, .modal-lg {
+.custom-col-article {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: rgba();
     border-radius: 2%;
@@ -447,7 +447,7 @@ margin: 10px;
     color: black;
 }
 
-.article-body .post-meta {
+.article-body .art-meta {
     font-family: ;
     font-size: 1em;
     font-style: italic;
@@ -455,6 +455,12 @@ margin: 10px;
     padding: 2px;
 }
 
+.article-body .art-subtitle {
+ font-family: ;
+  font-size: 1.2em;
+  color: black;
+  padding: 2px;
+}
 
 /*******************************************************/
 
