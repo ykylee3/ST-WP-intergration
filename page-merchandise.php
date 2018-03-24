@@ -1,21 +1,27 @@
-<!-- Merchandise page template-->
+<!-- This is the template for page Merchandise-->
 
-<!-- header template -->
 <?php get_header(); ?>
 
-<!-- Main page Banner -->
-      <header class="banner2 color1" aria-hidden="true">
-        <div class="container-fluid">
-          <div class="row">
-            <div id="particles-js"></div>
-          </div>
+<!-- Banner -->
+<header class="banner2 color1">
+  <div class="jumbotron-fluid">
+    <div class="container-fluid">
+      <div class="row">
+            <div id="particles-js">
+              <div class="jumbotron-fluid">
+                <div class="enterprise float-right">
+                  <img src="<?php echo get_template_directory_uri();?>/assets/enterprise-02-s.png">
+                </div>
+            </div>
         </div>
-      </header>
-
-<!-- merchandise content -->
-      <div class="container" id="articlehead">
-        <h2>Merchandise</h2>
       </div>
+    </div>
+  </div>
+</div>
+</header>
 
-<!-- footer template -->
+<div class="container" id="articlehead">
+  <h2>Merchandise</h2>
+</div>
+
 <?php get_footer();?>
