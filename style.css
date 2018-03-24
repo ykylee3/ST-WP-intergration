@@ -104,15 +104,105 @@ h2 {
   height: 50px;
 }
 
+/*******************************************************/
+/* Sets the position and animation of spaceship in banner*/
+
 .enterprise{
-  bottom:100px;
+  right:20px;
+  top:100px;
   position: absolute;
+  -webkit-transition:left .66s ease-out, top  .66s ease-out;
+  transition:left 1s ease-out, top 1s ease-out;
+  box-shadow: -1px -1px 3px #fff, 2px 2px 5px #000;
 }
 
-.particles-js-canvas-el{
-  z-index:1;
-  position: relative;
+.positioner {
+  position:absolute;
+  height:10%;
+  width:10%;
 }
+
+[id^="row-1"],
+[id^="row-1"]:hover  ~ .enterprise {
+  left: 0;
+}
+[id^="row-2"],
+[id^="row-2"]:hover  ~ .enterprise {
+  left: 10%;
+}
+[id^="row-3"],
+[id^="row-3"]:hover  ~ .enterprise {
+  left: 20%;
+}
+[id^="row-4"],
+[id^="row-4"]:hover  ~ .enterprise {
+  left: 30%;
+}
+[id^="row-5"],
+[id^="row-5"]:hover  ~ .enterprise {
+  left: 40%;
+}
+[id^="row-6"],
+[id^="row-6"]:hover  ~ .enterprise {
+  left: 50%;
+}
+[id^="row-7"],
+[id^="row-7"]:hover  ~ .enterprise {
+  left: 60%;
+}
+[id^="row-8"],
+[id^="row-8"]:hover  ~ .enterprise {
+  left: 70%;
+}
+[id^="row-9"],
+[id^="row-9"]:hover  ~ .enterprise {
+  left: 80%;
+}
+[id^="row-10"],
+[id^="row-10"]:hover  ~ .enterprise {
+  left: 90%;
+}
+[id$="col-1"],
+[id$="col-1"]:hover  ~ .enterprise {
+  top: 0;
+}
+[id$="col-2"],
+[id$="col-2"]:hover  ~ .enterprise {
+  top: 10%;
+}
+[id$="col-3"],
+[id$="col-3"]:hover  ~ .enterprise {
+  top: 20%;
+}
+[id$="col-4"],
+[id$="col-4"]:hover  ~ .enterprise {
+  top: 30%;
+}
+[id$="col-5"],
+[id$="col-5"]:hover  ~ .enterprise {
+  top: 40%;
+}
+[id$="col-6"],
+[id$="col-6"]:hover  ~ .enterprise {
+  top: 50%;
+}
+[id$="col-7"],
+[id$="col-7"]:hover  ~ .enterprise {
+  top: 60%;
+}
+[id$="col-8"],
+[id$="col-8"]:hover  ~ .enterprise {
+  top: 70%;
+}
+[id$="col-9"],
+[id$="col-9"]:hover  ~ .enterprise {
+  top: 80%;
+}
+[id$="col-10"],
+[id$="col-10"]:hover  ~ .enterprise {
+  top: 90%;
+}
+
 
 /*******************************************************/
 /* Sets the background banner image */
@@ -166,24 +256,24 @@ h2 {
 
 /*gallery widget*/
 .container.gallery-container {
-    background-color: rgba(255, 255, 255, 0.9);
-    color: #000000;
-    min-height: 100vh;
-    /* padding: 30px 30px; */
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000000;
+  min-height: 100vh;
+  /* padding: 30px 30px; */
 }
 
 .gallery-container h1 {
-    text-align: center;
-    margin-top: 30px;
-    font-family: 'Droid Sans', sans-serif;
-    font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: bold;
 }
 
 .gallery-container p.page-description {
-    text-align: center;
-    margin: 10px auto;
-    font-size: 18px;
-    color: #000000;
+  text-align: center;
+  margin: 10px auto;
+  font-size: 18px;
+  color: #000000;
 }
 
 .gallerywidget.gallery {
@@ -193,17 +283,17 @@ h2 {
 
 /* Override bootstrap column paddings for gallery */
 .gallery .row > div {
-    padding: 2px;
+  padding: 2px;
 }
 
 .gallery .thumbnail img {
-    max-width: 90%;
-    border-radius: 0;
-    position: relative;
+  max-width: 90%;
+  border-radius: 0;
+  position: relative;
 }
 
 .baguetteBox-button {
-    background-color: transparent !important;
+  background-color: transparent !important;
 }
 
 /* heading for the galleries */
@@ -220,7 +310,7 @@ h2 {
 }
 
 .g-content{
-margin: 10px;
+  margin: 10px;
 }
 
 /* Twitter embed format */
@@ -301,7 +391,7 @@ margin: 10px;
 }
 
 .about .col-lg-7 .col-md-7 .col-sm-9 .col-xs-12{
-    background: white;
+  background: white;
 }
 
 .about {
@@ -336,16 +426,16 @@ margin: 10px;
 /* Article page styles - begins here */
 
 /* fontface for the articles */
- @font-face {
-   font-family: 'mytitlefont';
-   src: url('/wordpress_local/wp-content/themes/idm/fonts/TNG_Title.ttf') format('truetype');
-  }
+@font-face {
+  font-family: 'mytitlefont';
+  src: url('/wordpress_local/wp-content/themes/idm/fonts/TNG_Title.ttf') format('truetype');
+}
 
 #articlehead {
   font-family: 'mytitlefont';
   font-size: 1.8em;
   padding: 10px;
-  }
+}
 
 #articles_main {
   width: 100%;
@@ -353,11 +443,11 @@ margin: 10px;
 }
 
 /* custom column styles */
-  .custom_col {
-    background-color: rgba(0,0,0,0.1);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 2%;
-  }
+.custom_col {
+  background-color: rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 2%;
+}
 
 /* column headings */
 .custom_col h5 {
@@ -429,40 +519,40 @@ margin: 10px;
 /*CSS for the Articles template page*/
 
 .custom-col-article {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: rgba();
-    border-radius: 2%;
-    padding: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgba();
+  border-radius: 2%;
+  padding: 5px;
 }
 
 .article-title {
-    font-family: ;
-    font-size: 1.5em;
-    font-weight: bold;
-    padding: 5px;
-    text-align: center;
-    color: black;
+  font-family: ;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 5px;
+  text-align: center;
+  color: black;
 }
 
 .article-body {
-    font-family: ;
-    font-size: 1.2em;
-    padding: 5px;
-    align-content: center;
-    text-align: justify;
-    color: black;
+  font-family: ;
+  font-size: 1.2em;
+  padding: 5px;
+  align-content: center;
+  text-align: justify;
+  color: black;
 }
 
 .article-body .art-meta {
-    font-family: ;
-    font-size: 1em;
-    font-style: italic;
-    color: black;
-    padding: 2px;
+  font-family: ;
+  font-size: 1em;
+  font-style: italic;
+  color: black;
+  padding: 2px;
 }
 
 .article-body .art-subtitle {
- font-family: ;
+  font-family: ;
   font-size: 1.2em;
   color: black;
   padding: 2px;
@@ -522,32 +612,32 @@ margin: 10px;
 
 /*social icons*/
 #icons {
-    text-align: left;
-    padding-top: 10px;
-    padding-bottom: -30px;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: -30px;
 }
 
 #icons .fab {
-    color: white;
-    margin: 5px 5px;
-    position: relative;
-    bottom: 0;
-    transition: all 0.2s ease-in-out;
+  color: white;
+  margin: 5px 5px;
+  position: relative;
+  bottom: 0;
+  transition: all 0.2s ease-in-out;
 }
 
 #icons .twitter:hover {
-    color:#6cadde;
-    bottom: 5px;
+  color:#6cadde;
+  bottom: 5px;
 }
 
 #icons .facebook:hover {
-    color:#3b5998;
-    bottom: 5px;
+  color:#3b5998;
+  bottom: 5px;
 }
 
 #icons .youtube:hover {
-    color: rgba(255, 0, 0, 0.7);
-    bottom: 5px;
+  color: rgba(255, 0, 0, 0.7);
+  bottom: 5px;
 }
 
 /*******************************************************/
@@ -563,32 +653,32 @@ margin: 10px;
   background-repeat: no-repeat;
   background-size: cover;
   /*background-position: 50% 50%;*/
-  }
+}
 
-  .color1 #particles-js{
-    /* blue */
-    background-color: #0e7cc9;
-  }
+.color1 #particles-js{
+  /* blue */
+  background-color: #0e7cc9;
+}
 
-  .color2 #particles-js{
-    /* green */
-    background-color: #007129;
-  }
+.color2 #particles-js{
+  /* green */
+  background-color: #007129;
+}
 
-  .color3 #particles-js{
-    /* black */
-    background-color: #1e2322;
-  }
+.color3 #particles-js{
+  /* black */
+  background-color: #1e2322;
+}
 
-  .color4 #particles-js{
-    /* red */
-    background-color: #f42222;
-  }
+.color4 #particles-js{
+  /* red */
+  background-color: #f42222;
+}
 
-  .color5 #particles-js{
-    /* yellow */
-    background-color: #f49c22;
-  }
+.color5 #particles-js{
+  /* yellow */
+  background-color: #f49c22;
+}
 
 /*******************************************************/
 /* Events section - begins here */
@@ -630,6 +720,10 @@ margin: 10px;
     height: 200px;
   }
 
+  .particles-js{
+    height: 200px;
+  }
+
   body {
     font-size: 12px;
   }
@@ -637,6 +731,10 @@ margin: 10px;
   #logo img {
     max-height: 150px;
   }
+
+  .enterprise {
+  }
+
 
   #circle {
     position: absolute;
@@ -665,9 +763,9 @@ margin: 10px;
 }
 
 @media(max-width: 768px) {
-    body {
-        padding: 0;
-    }
+  body {
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
