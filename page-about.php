@@ -45,7 +45,7 @@
       <div class="row">
       <div class="about about_club text-black col-lg-7 col-md-7 col-sm-9 col-xs-12">
         <h2>The Clubhouse</h2>
-        <p class="about text-left">The Clubhouse is a non-profit organization part of a global network
+        <p class="about text-left text-black">The Clubhouse is a non-profit organization part of a global network
           of 105 Clubhouses that provides a safe and creative learning environment in
           technology for young people between the ages of 10 and 18.</p>
           <a class="btn btn-primary" href="http://theclubhouse.ie/" role="button">Know More</a>
