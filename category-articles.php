@@ -19,7 +19,7 @@
 <div class="article">
   <div class="container">
     <div class="row">
-    <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+    <div class="text-white col-lg-10 col-md-10 col-sm-12 col-xs-12">
       <div class="container-fluid">
         <div class="row">
       <!-- php loop for posting blogs -->
@@ -39,11 +39,12 @@
       ?>
 
       <!-- container displaying the blogs -->
-      <div class="custom_col col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <div class="text-white custom_col col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <!-- the title of the blog -->
         <h5 class="post-title"><?php the_title(); ?></h5>
         <!-- meta data about the author and date of posting -->
-        <h6 class="post-meta">Posted by <?php the_author_posts_link(); ?> on <?php the_time('F j, Y'); ?></h6>
+        <h6 class="post-meta">Posted by <?php the_author_posts_link(); ?></h6>
+        <h6 class="post-meta"><?php the_time('F j, Y'); ?></h6>
         <!-- the excerpt of th blog to be displayed -->
         <div class="post-subtitle"><?php the_excerpt(); ?></div>
 
@@ -53,7 +54,7 @@
 
         <div class="modal fade" id="<?php echo get_the_ID(); ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
           <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
+            <div class="text-black modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="modaltitle"><?php the_title(); ?></h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">

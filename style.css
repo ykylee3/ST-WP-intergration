@@ -104,6 +104,16 @@ h2 {
   height: 50px;
 }
 
+.enterprise{
+  bottom:100px;
+  position: absolute;
+}
+
+.particles-js-canvas-el{
+  z-index:1;
+  position: relative;
+}
+
 /*******************************************************/
 /* Sets the background banner image */
 .jumbotron{
