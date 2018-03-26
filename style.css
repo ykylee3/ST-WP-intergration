@@ -487,6 +487,11 @@ h2 {
   text-align: right;
 }
 
+/* Color for the meta tags */
+.article.post-meta {
+  color: white;
+}
+
 /* column stylings */
 .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8 {
   background-color: rgba(255, 255, 255, 0);
@@ -531,7 +536,7 @@ h2 {
   font-weight: bold;
   padding: 5px;
   text-align: center;
-  color: black;
+  color: white;
 }
 
 .article-body {
@@ -540,21 +545,21 @@ h2 {
   padding: 5px;
   align-content: center;
   text-align: justify;
-  color: black;
+  color: white;
 }
 
 .article-body .art-meta {
   font-family: ;
   font-size: 1em;
   font-style: italic;
-  color: black;
+  color: white;
   padding: 2px;
 }
 
 .article-body .art-subtitle {
   font-family: ;
   font-size: 1.2em;
-  color: black;
+  color: white;
   padding: 2px;
 }
 
