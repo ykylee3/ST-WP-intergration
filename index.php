@@ -21,7 +21,7 @@
             Our aim is to bring the universe of Star Trek to new and old
             fans through events, screenings, our website, Facebook page
             and Twitter account.</p>
-            <p><a class="btn btn-primary" href="#" role="button" style="background: #5d5d5d; border-color: #5d5d5d">Learn more</a></p>
+            <p><a class="btn btn-primary" href="#" role="button" style="background: #FF4343; border-color: #5d5d5d">Learn more</a></p>
           </div>
         </div>
         <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
