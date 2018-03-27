@@ -4,7 +4,7 @@
 <div class="jumbotron">
       <div class="container">
         <div class="img-fluid mx-auto d-block text-center" id="logo">
-          <img class="logoimg animated fadeInUp" src="<?php echo get_template_directory_uri();?>/assets/STE_logo_201216.png">
+          <img class="logoimg animated fadeInUp" src="<?php echo get_template_directory_uri();?>/assets/STE_logo_201216.png" alt="logo" aria-hidden="true">
         </div>
       </div>
     </div>
@@ -48,11 +48,12 @@
         <p class="about text-left text-black">The Clubhouse is a non-profit organization part of a global network
           of 105 Clubhouses that provides a safe and creative learning environment in
           technology for young people between the ages of 10 and 18.</p>
-          <a class="btn btn-primary" href="http://theclubhouse.ie/" role="button">Know More</a>
+		  <div class="col-lg-5 col-md-5 col-sm-7 col-xs-12">
+       		 <div class="img-fluid"><img id="clubhouse_about" src="<?php echo get_template_directory_uri();?>/assets/clubhouse.jpg" alt="kid's equipments image"></div>
+      	  </div><br>
+          <a class="btn btn-primary" href="http://theclubhouse.ie/" target="_blank" role="button">Know More</a>
       </div>
-      <div class="col-lg-5 col-md-5 col-sm-7 col-xs-12">
-        <div class="img-fluid"><img id="clubhouse_about" src="<?php echo get_template_directory_uri();?>/assets/clubhouse.jpg" alt="kid's equipments image"></div>
-      </div>
+      
         </div>
     </div>
   </div>

@@ -21,7 +21,7 @@
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
       <img class="navlogoimg" src="<?php echo get_template_directory_uri();?>/assets/STE_logo_201216_mini.png" alt="Star Trek Logo" aria-hidden="true">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Star Trek Éire</a>
+      <a class="navbar-brand js-scroll-trigger" href="/">Star Trek Éire</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>

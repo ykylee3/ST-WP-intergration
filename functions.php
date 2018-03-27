@@ -1,4 +1,8 @@
 <?php
+	
+  add_theme_support( 'post-thumbnails' );
+  set_post_thumbnail_size( 100,100);
+
   function b2w_theme_style(){
     wp_enqueue_style('bootstrap_css', get_template_directory_uri().'/css/bootstrap.min.css','jquery');
     wp_enqueue_style('animate_css', get_template_directory_uri().'/css/animate.css');

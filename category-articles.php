@@ -3,7 +3,7 @@
 <?php get_header(); ?>
 
 <!-- Banner -->
-<header class="banner2 color2">
+<header class="banner2 color3">
   <div class="container-fluid">
     <div class="row">
       <div id="particles-js"></div>
@@ -43,8 +43,8 @@
         <!-- the title of the blog -->
         <h5 class="post-title"><?php the_title(); ?></h5>
         <!-- meta data about the author and date of posting -->
-        <h6 class="post-meta">Posted by <?php the_author_posts_link(); ?></h6>
-        <h6 class="post-meta"><?php the_time('F j, Y'); ?></h6>
+        <h6 class="text-white post-meta">Posted by <?php the_author_posts_link(); ?></h6>
+        <h6 class="text-white post-meta"><?php the_time('F j, Y'); ?></h6>
         <!-- the excerpt of th blog to be displayed -->
         <div class="post-subtitle"><?php the_excerpt(); ?></div>
 

@@ -1,4 +1,3 @@
-
 <!-- This is the template for single post pages-->
 
 <?php get_header(); ?>
@@ -25,8 +24,8 @@
 							get_template_part( 'template-parts/post/content', get_post_format() );
 
 						?>
-						<div class="custom-col-article col-lg-8 col-md-8 col-sm-10 col-xs-12" role="document">
-							<div class="article-content">
+						<div class="custom-col-article col-lg-10 col-md-8 col-sm-10 col-xs-12" role="document">
+							<div class="article-content text-white">
 								<div class="article-title">
 									<h5 class="art-title"><?php the_title(); ?></h5>
 								</div>
@@ -35,6 +34,10 @@
 									<p class="art-meta">Posted by <?php the_author_posts_link(); ?> on <?php the_time('F j, Y'); ?></p>
 							   	</div>
 									<p class="art-subtitle"><?php the_content(); ?></p>
+								</div>
+								<?php wp_list_comments( $args, $comments ); ?>
+								<div class="comment-area text-white text-left">
+									<?php comment_form(); ?>
 								</div>
 							</div>
 						</div>

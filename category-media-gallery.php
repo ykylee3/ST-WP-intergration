@@ -19,42 +19,43 @@
 
 <!-- content template -->
 <div class="container gallery-container">
-  <div class="gallery">
-    <div class="row">
+  <div class="gallery row">
+    <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- php loop for posting gallery posts -->
+          <?php
+          // variables defined
+          $args = array(
+            'post_type' => 'post',
+            'posts_per_page' => 8,
+            'category_name' => 'media-gallery'
+          );
 
-      <!-- php loop for posting gallery posts -->
-      <?php
-      // variables defined
-      $args = array(
-        'post_type' => 'post',
-        'post_per_page' => 8,
-        'category_name' => 'media-gallery'
-      );
+          $wp_query = new WP_Query ( $args );
 
-      $wp_query = new WP_Query ( $args );
+          if ( $wp_query->have_posts() ) : while ( $wp_query->have_posts() ) : $wp_query->the_post();
+          ?>
 
-      if ( $wp_query->have_posts() ) : while ( $wp_query->have_posts() ) : $wp_query->the_post();
-      ?>
-
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <h3 class="page-description text-center"><?php the_title(); ?></h3>
-        <!-- meta data about the author and date of posting -->
-        <h6 class="post-meta">Posted on <?php the_time('F j, Y'); ?></h6>
-        <div class="g-content">
-          <?php the_content(); ?>
-        </div>
-      </div>
+          <div class="custom-gallery col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <h3 class="text-white  page-description text-center"><?php the_title(); ?></h3>
+            <!-- meta data about the author and date of posting -->
+            <h6 class="text-white  post-meta">Posted on <?php the_time('F j, Y'); ?></h6>
+            <div class="text-white g-content">
+				<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+            </div>
+          </div>
 
 
-      <!-- php function call end  -->
+          <!-- php function call end  -->
 
-    <?php endwhile; else: ?>
-      <p>Sorry no posts yet.</p>
-    <?php endif; ?>
-
+        <?php endwhile; else: ?>
+          <p>Sorry no posts yet.</p>
+        <?php endif; ?>
+  </div></div>
   </div>
+<?php get_sidebar(); ?>
 </div>
 </div>
-
-<!-- footer template -->
-<?php get_footer();?>
+<!-- php footer function -->
+<?php get_footer(); ?>

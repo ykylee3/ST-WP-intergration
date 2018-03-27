@@ -3,7 +3,7 @@
 <div class="jumbotron">
   <div class="container">
     <div class="img-fluid mx-auto d-block text-center" id="logo">
-      <img class="logoimg animated fadeInUp" src="<?php echo get_template_directory_uri();?>/assets/STE_logo_201216.png">
+      <img class="logoimg animated fadeInUp" src="<?php echo get_template_directory_uri();?>/assets/STE_logo_201216.png" alt="logo" aria-hidden="true">
     </div>
   </div>
 </div>
@@ -12,23 +12,24 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-        <img class="img-fluid" src="<?php echo get_template_directory_uri();?>/assets/spock.jpg" alt="spock"></img>
+        <img class="img-fluid" src="<?php echo get_template_directory_uri();?>/assets/spock.jpg" alt="spock">
       </div>
       <div class="text-white col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <div class="startrek_index text-white">
-          <h1 class="index_title"><a href="about.html">Star Trek Éire</a></h1>
+          <h1 class="index_title">Star Trek Éire</h1>
           <p>Star Trek Eire is a not for profit group of Star Trek fans based in Ireland.
             Our aim is to bring the universe of Star Trek to new and old
             fans through events, screenings, our website, Facebook page
-            and Twitter account.</p>
-            <p><a class="btn btn-primary" href="about.html" role="button" style="background: #FF4343; border-color: #5d5d5d">Learn more</a></p>
+			  and Twitter account.</p>
+            <p><a class="btn btn-primary" href="/about" role="button">Learn more</a></p>
           </div>
         </div>
         <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
           <div class="clubhouse text-white">
-            <h1 class="index_title"><a href="about.html">The Clubhouse</a></h1>
-            <p>The clubhouse is our charity partner.</p>
-            <p><a class="btn btn-primary" href="about.html" role="button" style="background: #5d5d5d; border-color: #5d5d5d">Learn More</a></p>
+            <h1 class="text-center index_title">The Clubhouse</h1>
+            <p class="text-center">The clubhouse is our charity partner.</p>
+            <p><a id="club-btn" class="btn btn-primary" href="/about" role="button">Learn More</a></p>
+			 <br><br>
           </div>
         </div>
       </div>
@@ -56,7 +57,7 @@
 
               if ( $wp_query->have_posts() ) : while ( $wp_query->have_posts() ) : $wp_query->the_post();
               ?>
-              <h4 class="page-description text-center"><?php the_title(); ?></h3>
+              <h4 class="page-description text-center"><?php the_title(); ?></h4>
               <!-- meta data about the author and date of posting -->
               <div class="g-content">
                 <?php the_content(); ?>
@@ -99,7 +100,7 @@
             <div class="post-subtitle"><?php the_excerpt(); ?></div>
             <!-- Button link to full article -->
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#<?php echo get_the_ID(); ?>">Read More</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#<?php echo get_the_ID(); ?>">Read More</button>
 
             <div class="modal fade" id="<?php echo get_the_ID(); ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
               <div class="modal-dialog modal-lg" role="document">
@@ -112,9 +113,9 @@
                   </div>
                   <div class="modal-body">
                     <div class="italic">
-                      <p class="post-meta">Posted by <?php the_author_posts_link(); ?> on <?php the_time('F j, Y'); ?></p>
+                      <p class="modal-meta">Posted by <?php the_author_posts_link(); ?> on <?php the_time('F j, Y'); ?></p>
                     </div>
-                    <p class="post-subtitle"><?php the_content(); ?></p>
+                    <p class="text-black modal-subtitle"><?php the_content(); ?></p>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -142,43 +143,5 @@
 </div>
 </div>
 </div>
-
-<section class="contact">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="crew col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="text"><p>The Crew</p></div>
-
-      </div>
-      <div class="crew col-lg-1 col-md-1 hidden-xl-up"></div>
-      <div class="crew col-lg-2 col-md-2 col-sm-12 col-xs-12">
-        <!-- <div class="square"><p>Member</p></div> -->
-        <div class="text"><p>Ronan</p></div>
-        <img class="img-fluid" id="img_crew" src="<?php echo get_template_directory_uri();?>/assets/spock.jpg" alt="spock"></img>
-      </div>
-      <div class="crew col-lg-2 col-md-2 col-sm-12 col-xs-12">
-        <!-- <div class="square"><p>Member</p></div> -->
-        <div class="text"><p>Gary</p></div>
-        <img class="img-fluid" id="img_crew" src="<?php echo get_template_directory_uri();?>/assets/spock.jpg" alt="spock"></img>
-      </div>
-      <div class="crew col-lg-2 col-md-2 col-sm-12 col-xs-12">
-        <!-- <div class="square"><p>Member</p></div> -->
-        <div class="text"><p>Shane</p></div>
-        <img class="img-fluid" id="img_crew" src="<?php echo get_template_directory_uri();?>/assets/spock.jpg" alt="spock"></img>
-      </div>
-      <div class="crew col-lg-2 col-md-2 col-sm-12 col-xs-12">
-        <!-- <div class="square"><p>Member</p></div> -->
-        <div class="text"><p>Darryn</p></div>
-        <img class="img-fluid" id="img_crew" src="<?php echo get_template_directory_uri();?>/assets/spock.jpg" alt="spock"></img>
-      </div>
-      <div class="crew col-lg-2 col-md-2 col-sm-12 col-xs-12">
-        <!-- <div class="square"><p>Member</p></div> -->
-        <div class="text"><p>Ciarán</p></div>
-        <img class="img-fluid" id="img_crew" src="<?php echo get_template_directory_uri();?>/assets/spock.jpg" alt="spock"></img>
-      </div>
-      <div class="crew col-lg-1 col-md-1 hidden-xl-up"></div>
-    </div>
-  </div>
-</section>
 
 <?php get_footer(); ?>

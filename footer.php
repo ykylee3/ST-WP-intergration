@@ -11,13 +11,14 @@
             <h5>Sitemap</h5>
             <div class="footer_content">
               <ul class="list-unstyled">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Articles</a></li>
-                <li><a href="#">Media Gallery</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Merchandise</a></li>
-                <li><a href="#">Behind the Scenes</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/category/articles">Articles</a></li>
+                <li><a href="/category/media-gallery">Media Gallery</a></li>
+                <li><a href="/category/upcoming-events">Upcoming Events</a></li>
+				<li><a href="/category/past-events">Past Events</a></li>
+                <li><a href="/category/merchandise">Merchandise</a></li>
+                <li><a href="/category/behind-the-scenes">Behind the Scenes</a></li>
               </ul>
             </div>
           </div>
@@ -27,13 +28,13 @@
       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <div class="footer_content">
           <h5>Contact Us</h5>
-          <p>Email: <a href="#" style="color: white;">info@startrekireland.com</a></p>
+          <p>Email: <a href="mailto:info@startrekireland.com" style="color: white;">info@startrekireland.com</a></p>
           <div id="icons">
             <h5>Follow Us</h5>
             <ul class="list-inline">
-              <a href="https://twitter.com/startrekeire/" target="_blank" alt="Follow us on Twitter"><li class="list-inline-item"><i class="fab twitter fa-twitter-square fa-3x"></i></li></a>
-              <a href="https://www.facebook.com/startrekeire/" target="_blank" alt="Follow us on Facebook"><li class="list-inline-item"><i class="fab facebook fa-facebook-square fa-3x"></i></li></a>
-              <a href="https://www.youtube.com/channel/UCIgCPEEvSShmmJd3UJe-vlw" target="_blank" alt="Follow us on Youtube"><li class="list-inline-item"><i class="fab youtube fa-youtube-square fa-3x"></i></li></a>
+              <li class="list-inline-item"><a href="https://twitter.com/startrekeire/" target="_blank" aria-label="Follow us on Twitter"><i class="fab twitter fa-twitter-square fa-3x"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.facebook.com/startrekeire/" target="_blank" aria-label="Follow us on Facebook"><i class="fab facebook fa-facebook-square fa-3x"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.youtube.com/channel/UCIgCPEEvSShmmJd3UJe-vlw" target="_blank" aria-label="Follow us on YouTube"><i class="fab youtube fa-youtube-square fa-3x"></i></a></li>
             </ul>
           </div>
         </div>
